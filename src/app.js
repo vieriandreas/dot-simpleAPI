@@ -10,6 +10,8 @@ const UserService = require('./service/user');
 //import Handler
 const UserHandler = require('./handler/user');
 
+// import middleware
+const Auth = require('./middleware/auth')
 
 app.use(express.json());
 
@@ -27,6 +29,9 @@ app.use('/api', router)
 
 const userService = new UserService(userRepository)
 const userHandler = new UserHandler(userService);
+
+// User
+app.get('/users', Auth.authenticate, UserHandler.getAll)
 
 app.use((req, res, next) => {
     res.status(404).send({
