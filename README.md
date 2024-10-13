@@ -31,4 +31,4 @@ Projek ini menggunakan beberapa layer seperti,
 lihat di folder collection
 
 ## Video Demo
-TBD
+https://www.loom.com/share/1800a2b2d6884ef283ffd8325a1ad412?sid=cfbf3fb3-d85a-4780-87b8-348162c8c666
